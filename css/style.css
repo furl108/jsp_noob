@@ -1,0 +1,115 @@
+/* style.css */
+
+/* 기본 배경 및 폰트 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top right, #a1c4fd, #c2e9fb);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  
+  /* 시계 스타일: 눈에 잘 띄게 중앙 상단 배치 */
+  #clock {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 로그인 폼 스타일 */
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #login-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  #login-form input[type="submit"] {
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #login-form input[type="submit"]:hover {
+    background-color: #357ab7;
+  }
+  
+  /* 환영 메시지 스타일 */
+  #greeting {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* 할 일 입력 폼 스타일 */
+  #todo-form {
+    margin-bottom: 20px;
+  }
+  
+  #todo-form input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+  }
+  
+  /* 할 일 목록 스타일 */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    width: 320px;
+  }
+  
+  #todo-list li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #todo-list li button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* 날씨 정보 스타일 */
+  #weather {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  /* 숨김 클래스 처리 */
+  .hidden {
+    display: none;
+  }
+  
